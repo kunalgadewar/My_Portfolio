@@ -1,0 +1,89 @@
+.home{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+     flex-direction: column;
+}
+.home .home-text{
+    display: flex;
+    justify-content: center;
+    
+}
+.home .home-text h1{
+    color: var(--yellow-theme-main-color);
+    margin: 0px;
+    font-weight: 500;
+    font-size: 8rem;
+    line-height: 10rem;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typingEffectAnimation 2.5s steps(30,end);
+}
+
+.home-contact-me{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.home-contact-me button{
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 10px 70px;
+    background: transparent;
+    color: var(--yellow-theme-main-color);
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.home-contact-me button:hover{
+    background-color: var(--yellow-theme-main-color);
+    color: black;
+}
+
+@media only screen and (max-width:550px){
+    .home .home-text h1{
+        font-size: 4rem;
+        line-height: 6rem;
+    }
+}
+
+@media only screen and (min-width:551px) and (max-width:768px){
+    .home .home-text h1{
+        font-size: 6rem;
+        line-height: 8rem;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:990px){
+    .home .home-text h1{
+        font-size: 8rem;
+        line-height: 10rem;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .home .home-text h1{
+        
+        line-height: 6rem;
+    }
+}
+
+@media only screen and (max-width:325px){
+    .home .home-text h1{
+        font-size: 5rem;
+        line-height: 8rem;
+    }
+}
+
+@keyframes typingEffectAnimation{
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
